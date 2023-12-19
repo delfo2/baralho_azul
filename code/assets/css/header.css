@@ -1,0 +1,64 @@
+.header {
+    align-items: center;
+    border-bottom: 2px solid var(--main);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header__title {
+    height: 8vh;
+    margin: 1rem;
+    margin-right: 0;
+    width: 50%;
+    & > img {
+        height: 100%;
+        object-fit: contain;
+        object-position: left;
+        width: 100%;
+    }
+}
+
+.header__btn {
+    background: url("../svg/menu.svg") no-repeat center;
+    border: none;
+    cursor: pointer;
+    color: var(--main);
+    filter: invert(30%) sepia(100%) saturate(1035%) hue-rotate(325deg) brightness(89%) contrast(92%);
+    margin: 1rem;
+    margin-left: 0;
+    height: 3rem;
+    width: 3rem;
+}
+
+.header__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    & > a:first-child {
+        animation-delay: 200ms;
+    }
+    & > a:nth-child(2) {
+        animation-delay: 100ms;
+    }
+}
+
+.header__menu > a {
+    animation: slideInBottom 500ms ease-in-out both;
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    &::before {
+        color: var(--bkg);
+        content: "✦";
+        padding-right: 3px;
+    }
+}
+.header__menu > a:hover {
+    background-color: var(--main);
+    &::before {
+        color: var(--text);
+    }
+}

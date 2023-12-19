@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
-    --bkg: #2A363B;
-    --main: #CF4647;
-    --gold: #F5D061;
-    --text: #F8F6F6;
+    --bkg: #1b1b1b;
+    --main: #cf4647;
+    --gold: #f5d061;
+    --text: #f8f6f6;
     /* color palette: https://colorhunt.co/palette/2a363bcf4647f5d061f8f6f6 */
+    --font: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--text);
+    font-family: var(--font);
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background-color: var(--bkg);
 }
