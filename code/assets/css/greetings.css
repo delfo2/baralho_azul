@@ -1,0 +1,58 @@
+.main {
+    margin-top: 2rem;
+}
+
+.paragraph {
+    font-weight: 300;
+    text-align: center;
+    width: 75%;
+}
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* greeting */
+.greeting {
+    color: var(--text);
+}
+.greetings {
+    margin-bottom: 0;
+}
+.greetings__img {
+    width: 100%;
+    filter: brightness(1.1) contrast(100%);
+}
+
+.greetings__title {
+    font-size: 2.5rem;
+}
+
+.quality__img {
+    width: 100%;
+}
+
+.quality__title {
+    font-size: 2rem;
+}
+
+.design__img {
+    width: 80%;
+}
+
+.design__title {
+    font-size: 2rem;
+}
+
+.greeting::after {
+    content: "";
+    background-color: var(--bkg);
+    clip-path: polygon(0 0, 100% 0%, 0% 100%);
+    display: block;
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+}

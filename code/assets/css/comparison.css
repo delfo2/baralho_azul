@@ -1,0 +1,5 @@
+.comparison {
+    background-color: var(--main);
+    color: var(--bkg);
+    padding-top: 10rem;
+}

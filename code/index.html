@@ -4,23 +4,222 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Matrix</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/header.css">
-        <link rel="stylesheet" href="assets/css/animation.css">
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/header.css" />
+        <link rel="stylesheet" href="assets/css/animation.css" />
+        <link rel="stylesheet" href="assets/css/greetings.css" />
+        <link rel="stylesheet" href="assets/css/opinion.css" />
+        <link rel="stylesheet" href="assets/css/comparison.css" />
     </head>
     <body class="body">
         <header class="header">
-            <h2 class="slideInRight header__title"><img src="assets/img/matrix.png" alt="logotipo matrix"></h2>
+            <h2 class="slideInRight header__title">
+                <img src="assets/img/matrix.webp" alt="logotipo matrix" />
+            </h2>
             <button class="slideInLeft header__btn" id="menuBtn"></button>
             <nav class="header__menu" id="menu">
-                <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Home</a>
-                <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Sobre</a>
-                <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Suporte</a>
+                <a
+                    href="http://www.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Home</a
+                >
+                <a
+                    href="http://www.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Sobre</a
+                >
+                <a
+                    href="http://www.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Suporte</a
+                >
             </nav>
         </header>
-        <main>
-            <article>
-                <h1>Baralho Matrix</h1>
+        <main class="main">
+            <!-- GREETING SECTION -->
+
+            <article class="greeting">
+                <section class="container greetings">
+                    <img
+                        class="greetings__img"
+                        src="https://github.com/delfo2/baralho_azul/blob/main/img/1.webp?raw=true"
+                        alt="quatro cartas de baralho dispostas"
+                        srcset=""
+                    />
+                    <h1 class="title greetings__title">
+                        <strong>B</strong>aralho <strong>M</strong>atrix
+                    </h1>
+                    <p class="paragraph">
+                        Explore a elegância e sofisticação do poker com nosso
+                        exclusivo baralho de luxo.
+                    </p>
+                </section>
+                <section class="container quality">
+                    <img
+                        class="quality__img"
+                        src="https://github.com/delfo2/baralho_azul/blob/main/img/3.webp?raw=true"
+                        alt="carta de baralho com zoom"
+                    />
+                    <h3 class="title quality__title">
+                        <strong>Q</strong>ualidade <strong>S</strong>uperior
+                    </h3>
+                    <p class="paragraph">
+                        Feito com um plástico de alta durabilidade e design
+                        sofisticado.
+                    </p>
+                </section>
+                <section class="container design">
+                    <img
+                        class="design__img"
+                        src="https://github.com/delfo2/baralho_azul/blob/main/img/2.webp?raw=true"
+                        alt="carta de baralho com zoom"
+                    />
+                    <h3 class="title design__title">
+                        <strong>D</strong>esign <strong>Ú</strong>nicos
+                    </h3>
+                    <p class="paragraph">
+                        Cada carta é uma obra-prima meticulosamente projetada
+                        para elevar sua experiência de jogo.
+                    </p>
+                </section>
+                <div class="separator">
+                    <div></div>
+                    <span>♠</span>
+                    <span class="separator__main">♥</span>
+                    <span>♠</span>
+                    <div></div>
+                </div>
+            </article>
+
+            <!-- COMPARISON SECTION -->
+
+            <article class="comparison">
+                <section class="comparison__introduction">
+                    <h3>Baralho Matrix X Outros Baralhos</h3>
+                    <p>
+                        O Baralho Matrix redefine a experiência de jogo,
+                        destacando-se entre os demais baralhos pela qualidade, inovação e
+                        originalidade.
+                    </p>
+                    <p>Veja abaixo as principais diferenças entre o Baralho Matrix e outros baralhos</p>
+                </section>
+                <table class="comparison__table">
+                    <thead>
+                        <tr>
+                            <th>Funcionalidade</th>
+                            <th>Baralho Matrix</th>
+                            <th>Outros Baralhos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Número de Cartas</td>
+                            <td>52 + Jokers</td>
+                            <td>52 + Jokers</td>
+                        </tr>
+                        <tr>
+                            <td>Design das Cartas</td>
+                            <td><strong>Design meticuloso</strong> projetado para melhorar sua experiência nos jogos</td>
+                            <td>Design genérico</td>
+                        </tr>
+                        <tr>
+                            <td>Material das Cartas</td>
+                            <td><strong>Plástico nobre</strong> de alta qualidade</td>
+                            <td>Geralmente papel cartão de <strong>qualidade padrão</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Durabilidade</td>
+                            <td>Durabilidade de <strong>5 anos garantida</strong></td>
+                            <td>Durabilidade média de alguns meses</td>
+                        </tr>
+                        <tr>
+                            <td>Revestimento</td>
+                            <td>Verniz à Base de Água</td>
+                            <td>Geralmente <strong>não possui</strong> revestimento</td>
+                        </tr>
+                        <tr>
+                            <td>Embalagem</td>
+                            <td>Embalagem personalizada de plástico nobre</td>
+                            <td>Geralmente embalagens de papel</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <!-- OPINION SECTION-->
+
+            <article class="opinion">
+                <h2 class="title title-section">
+                    <strong>O</strong>pinião dos <strong>E</strong>specialistas
+                </h2>
+                <section class="opinion__container">
+                    <img
+                        class="opinion__img"
+                        src="https://media.licdn.com/dms/image/C4D03AQEHIhDC6G-rbg/profile-displayphoto-shrink_800_800/0/1626738332522?e=1708560000&v=beta&t=vwYaebnG5fCdzvbWGZIyXgZdWxzKRLNydxpu9D4HV5w"
+                        alt="foto do professor Lucas"
+                        srcset=""
+                    />
+                    <h3 class="opinion__title">Lucas Sousa</h3>
+                    <p class="opinion__text">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit."
+                    </p>
+                </section>
+                <section class="opinion__container opinion__container-inverse">
+                    <img
+                        class="opinion__img"
+                        src="https://media.licdn.com/dms/image/C4D03AQFoYVhEFXo8FA/profile-displayphoto-shrink_800_800/0/1635843985961?e=1708560000&v=beta&t=DOtnJ2NYQu4hXHvXECT3TVr1QS18jCbs3G3nA_XijIk"
+                        alt="Foto do gestor de projetos Samir"
+                        srcset=""
+                    />
+                    <h3 class="opinion__title">Samir Lutif</h3>
+                    <p class="opinion__text">
+                        "A resistência é de outro mundo! Mesmo se pegar
+                        <strong>fogo no parquinho</strong> ele ainda resiste!
+                        <strong>Faz sentido</strong> um trem desse?"
+                    </p>
+                </section>
+                <section class="opinion__container">
+                    <img
+                        class="opinion__img"
+                        src="https://media.licdn.com/dms/image/D4E03AQGhHdZVLWi_TA/profile-displayphoto-shrink_800_800/0/1670414367973?e=1708560000&v=beta&t=Bh8pnNe_HrYwmmAVHFqNLrLW7zQz6pIG4k7MpzR7TMk"
+                        alt="Foto do coordenador Kenji"
+                        srcset=""
+                    />
+                    <h3 class="opinion__title">Kenji Taniguchi</h3>
+                    <p class="opinion__text">
+                        "Imagine-se fazendo um 'merge' entre diversão e
+                        estratégia enquanto os naipes se tornam variáveis e cada
+                        carta é um 'if' para desafiar sua lógica.
+                        <strong>Animados?</strong>"
+                    </p>
+                </section>
+                <section class="opinion__container opinion__container-inverse">
+                    <img
+                        class="opinion__img"
+                        src="https://avatars.githubusercontent.com/u/8161576?v=4"
+                        alt="Ícone de usuário do professor Vitor"
+                        srcset=""
+                    />
+                    <h3 class="opinion__title">Vitor</h3>
+                    <p class="opinion__text">
+                        "Curto demais essa vibe aleatória das cartas! Tô aqui
+                        dividido entre duas opções:
+                        <strong>criar um algoritmo infalível</strong> pra sempre
+                        vencer nos jogos ou
+                        <strong>pedir para meus alunos cria-lo...</strong>"
+                    </p>
+                </section>
+                <div class="separator separator-black">
+                    <div></div>
+                    <span>♠</span>
+                    <span class="separator__main">♥</span>
+                    <span>♠</span>
+                    <div></div>
+                </div>
             </article>
         </main>
         <footer></footer>
