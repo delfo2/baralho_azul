@@ -4,8 +4,14 @@
     background-color: var(--main);
     color: var(--text);
     display: flex;
+    filter: drop-shadow(0px 0px 5px var(--bkg));
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
 }
 
 .header__title {
@@ -34,9 +40,13 @@
 }
 
 .header__menu {
+    background-color: var(--main);
     display: none;
     flex-direction: column;
+    position: absolute;
     width: 100%;
+    top: 15vh;
+    z-index: -1;
     & > a:first-child {
         animation-delay: 200ms;
     }
@@ -47,7 +57,7 @@
 
 .header__menu > a {
     animation: slideInBottom 500ms ease-in-out both;
-    background-color: var(--bkg-transparent);
+    background-color: var(--main);
     color: var(--text);
     font-size: 1.3rem;
     padding: 1rem;
@@ -64,5 +74,14 @@
     background-color: var(--main);
     &::before {
         color: var(--text);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .header__menu {
+        border-bottom-left-radius: 10%;
+        overflow: hidden;
+        right: 0;
+        width: 20%;
     }
 }

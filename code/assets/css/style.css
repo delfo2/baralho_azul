@@ -10,6 +10,12 @@
     /* color palette: https://colorhunt.co/palette/2a363bcf4647f5d061f8f6f6 */
     --font: "Roboto", sans-serif;
     --font2: "Rowdies", sans-serif;
+    width: 100vw;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 * {
@@ -21,6 +27,12 @@
 
 .body {
     background-color: var(--bkg);
+    width: 100%;
+}
+
+.main {
+    margin-top: 10rem;
+    width: 100%;
 }
 
 .separator {
@@ -83,13 +95,21 @@
 
 em {
     background-color: var(--gold);
+    border-radius: 5px;
     display: inline-block;
+    font-weight: 500;
     line-height: 1rem;
     padding: 0px 5px;
-    border-radius: 5px;
 }
 
 .article__container {
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
     padding: 10rem 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .article__container {
+        padding: 5rem 0;
+    }
 }

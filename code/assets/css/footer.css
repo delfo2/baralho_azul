@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2rem;
+    margin-top: -10rem;
 }
 
 .footer > img {
@@ -44,4 +45,14 @@
 
 .footer > a:last-child::after {
     background: url("../svg/linkedin.svg");
+}
+
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        margin-top: -5rem;
+    }
+    .footer > img {
+        width: 10%;
+    }
 }

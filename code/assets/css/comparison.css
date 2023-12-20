@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .comparison__img {
@@ -32,8 +32,8 @@
 
 .comparison__text {
     display: none;
-    font-size: .8rem;
-    margin: .5rem auto;
+    font-size: 0.8rem;
+    margin: 0.5rem auto;
     width: 70%;
 }
 
@@ -42,11 +42,15 @@
     background-color: var(--gold);
     border-collapse: collapse;
     color: var(--bkg);
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin: 2rem;
     overflow: hidden;
+    width: calc(100% - 4rem);
     padding: 0;
     table-layout: fixed;
+    & * {
+        width: 100%;
+    }
 }
 
 .comparison__table > thead {
@@ -60,13 +64,13 @@
 .comparison__table td {
     background-color: var(--gold);
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     height: 100%;
 }
 
 .comparison__table td:first-child,
 .comparison__table td:last-child {
-    filter: brightness(.95);
+    filter: brightness(0.95);
 }
 
 .comparison__table tr:nth-child(even) > td:first-child,
@@ -93,7 +97,8 @@
     content: "";
     display: inline-block;
     background: url("../svg/accept.svg") no-repeat center;
-    filter: invert(33%) sepia(77%) saturate(1731%) hue-rotate(333deg) brightness(86%) contrast(85%);
+    filter: invert(33%) sepia(77%) saturate(1731%) hue-rotate(333deg)
+        brightness(86%) contrast(85%);
     width: 25px;
     height: 25px;
 }
@@ -104,19 +109,66 @@
     flex-flow: column wrap;
     justify-content: center;
     height: 15vh;
-    padding: 0 2rem;
+    padding: 0 1rem;
     margin-bottom: 2rem;
     & > h4 {
-        width: 60%;
+        width: 50%;
         height: 20%;
     }
     & > .title {
+        width: 50%;
         height: 80%;
+        text-align: left;
         & > strong {
             color: var(--bkg);
         }
     }
     & > img {
         width: 35%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .comparison__img {
+        width: 30%;
+    }
+
+    .comparison__title {
+        width: 40%;
+    }
+
+    .comparison__text {
+        width: 30%;
+    }
+    .comparison__winner {
+        height: 20vh;
+        padding: 0 1rem;
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .comparison {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .comparison__introduction {
+        width: 70%;
+    }
+    .comparison__table {
+        width: calc(90% - 4rem);
+    }
+
+    .comparison__table td {
+        padding: 1rem 0.5rem;
+    }
+
+    .comparison__winner {
+        width: 90%;
+        & > .title {
+            font-size: 2.5rem;
+        }
     }
 }

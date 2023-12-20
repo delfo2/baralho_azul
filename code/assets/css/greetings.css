@@ -1,7 +1,3 @@
-.main {
-    margin-top: 2rem;
-}
-
 em {
     color: var(--bkg);
 }
@@ -49,4 +45,33 @@ em {
 
 .design__title {
     font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .greetings__img,
+    .quality__img {
+        width: 50%;
+    }
+
+    .design__img{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .greeting {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    .greeting > section {
+        width: 50%;
+    }
+    .greeting > .greetings {
+        width: 100%;
+    }
+
+    .design__img{
+        width: 40%;
+    }
 }
