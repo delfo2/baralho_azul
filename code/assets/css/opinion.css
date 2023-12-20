@@ -1,7 +1,7 @@
 .opinion {
     background-color: var(--gold);
     color: var(--bkg);
-    transform: translateY(-5%);
+    /* transform: translateY(-5%); */
 }
 
 .title-section {

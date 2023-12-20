@@ -18,6 +18,7 @@ em {
 /* greeting */
 .greeting {
     color: var(--text);
+    padding-bottom: 5rem;
 }
 .greetings {
     margin-bottom: 0;
