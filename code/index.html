@@ -10,11 +10,13 @@
         <link rel="stylesheet" href="assets/css/greetings.css" />
         <link rel="stylesheet" href="assets/css/opinion.css" />
         <link rel="stylesheet" href="assets/css/comparison.css" />
+        <link rel="stylesheet" href="assets/css/reservation.css" />
+        <link rel="stylesheet" href="assets/css/footer.css" />
     </head>
     <body class="body">
         <header class="header">
             <h2 class="slideInRight header__title">
-                <img src="assets/img/matrix.webp" alt="logotipo matrix" />
+                <img src="assets/img/matrix.png" alt="logotipo matrix" />
             </h2>
             <button class="slideInLeft header__btn" id="menuBtn"></button>
             <nav class="header__menu" id="menu">
@@ -53,8 +55,8 @@
                         <strong>B</strong>aralho <strong>M</strong>atrix
                     </h1>
                     <p class="paragraph">
-                        Explore a elegância e sofisticação do poker com nosso
-                        exclusivo baralho de luxo.
+                        Explore a <em>elegância e sofisticação</em> do poker com
+                        nosso exclusivo <em>baralho de luxo</em>.
                     </p>
                 </section>
                 <section class="container quality">
@@ -67,8 +69,8 @@
                         <strong>Q</strong>ualidade <strong>S</strong>uperior
                     </h3>
                     <p class="paragraph">
-                        Feito com um plástico de alta durabilidade e design
-                        sofisticado.
+                        Feito com um <em>plástico de alta durabilidade</em> e
+                        design sofisticado.
                     </p>
                 </section>
                 <section class="container design">
@@ -81,8 +83,8 @@
                         <strong>D</strong>esign <strong>Ú</strong>nicos
                     </h3>
                     <p class="paragraph">
-                        Cada carta é uma obra-prima meticulosamente projetada
-                        para elevar sua experiência de jogo.
+                        Cada carta é uma <em>obra-prima</em> meticulosamente
+                        projetada para elevar sua experiência de jogo.
                     </p>
                 </section>
                 <div class="separator">
@@ -96,15 +98,32 @@
 
             <!-- COMPARISON SECTION -->
 
-            <article class="comparison">
+            <article class="article__container comparison">
                 <section class="comparison__introduction">
-                    <h3>Baralho Matrix X Outros Baralhos</h3>
-                    <p>
+                    <img
+                        class="comparison__img"
+                        src="https://github.com/delfo2/baralho_azul/blob/main/img/1.webp?raw=true"
+                        alt="Baralho Matrix"
+                    />
+                    <h3 class="title comparison__title">
+                        <strong>B</strong>aralho <strong>M</strong>atrix
+                        <br /><bold>VS</bold><br />
+                        Outros Baralhos
+                    </h3>
+                    <img
+                        class="comparison__img"
+                        src="https://unltdsneakers.com.br/cdn/shop/products/STEEL_ACESSORIOS-Baralho-supreme-2_800x.png?v=1648562368"
+                        alt="Baralho genérico"
+                    />
+                    <p class="comparison__text">
                         O Baralho Matrix redefine a experiência de jogo,
-                        destacando-se entre os demais baralhos pela qualidade, inovação e
-                        originalidade.
+                        destacando-se entre os demais baralhos pela qualidade,
+                        inovação e originalidade.
                     </p>
-                    <p>Veja abaixo as principais diferenças entre o Baralho Matrix e outros baralhos</p>
+                    <p class="comparison__text">
+                        Veja abaixo as principais diferenças entre o Baralho
+                        Matrix e outros baralhos
+                    </p>
                 </section>
                 <table class="comparison__table">
                     <thead>
@@ -122,36 +141,73 @@
                         </tr>
                         <tr>
                             <td>Design das Cartas</td>
-                            <td><strong>Design meticuloso</strong> projetado para melhorar sua experiência nos jogos</td>
+                            <td class="comparison__best">
+                                <strong>Design meticuloso</strong> projetado
+                                para melhorar sua experiência nos jogos
+                            </td>
                             <td>Design genérico</td>
                         </tr>
                         <tr>
                             <td>Material das Cartas</td>
-                            <td><strong>Plástico nobre</strong> de alta qualidade</td>
-                            <td>Geralmente papel cartão de <strong>qualidade padrão</strong></td>
+                            <td class="comparison__best">
+                                <strong>Plástico nobre</strong> de alta
+                                qualidade
+                            </td>
+                            <td>
+                                Papel cartão de
+                                <strong>qualidade padrão</strong>
+                            </td>
                         </tr>
                         <tr>
                             <td>Durabilidade</td>
-                            <td>Durabilidade de <strong>5 anos garantida</strong></td>
+                            <td class="comparison__best">
+                                Durabilidade de
+                                <strong>5 anos garantida</strong>
+                            </td>
                             <td>Durabilidade média de alguns meses</td>
                         </tr>
                         <tr>
                             <td>Revestimento</td>
-                            <td>Verniz à Base de Água</td>
-                            <td>Geralmente <strong>não possui</strong> revestimento</td>
+                            <td class="comparison__best">
+                                Verniz à Base de Água
+                            </td>
+                            <td>
+                                Geralmente
+                                <strong>não possui</strong> revestimento
+                            </td>
                         </tr>
                         <tr>
                             <td>Embalagem</td>
-                            <td>Embalagem personalizada de plástico nobre</td>
+                            <td class="comparison__best">
+                                Embalagem personalizada de plástico nobre
+                            </td>
                             <td>Geralmente embalagens de papel</td>
                         </tr>
                     </tbody>
                 </table>
+                <section class="comparison__winner">
+                    <h4>Vencedor:</h4>
+                    <h5 class="title">
+                        <strong>B</strong>aralho <strong>M</strong>atriz
+                    </h5>
+                    <img
+                        class="comparison__img"
+                        src="https://github.com/delfo2/baralho_azul/blob/main/img/1.webp?raw=true"
+                        alt="Baralho Matrix"
+                    />
+                </section>
+                <div class="separator separator-black separator-white__heart">
+                    <div></div>
+                    <span>♠</span>
+                    <span class="separator__main">♥</span>
+                    <span>♠</span>
+                    <div></div>
+                </div>
             </article>
 
             <!-- OPINION SECTION-->
 
-            <article class="opinion">
+            <article class="article__container opinion">
                 <h2 class="title title-section">
                     <strong>O</strong>pinião dos <strong>E</strong>specialistas
                 </h2>
@@ -164,8 +220,9 @@
                     />
                     <h3 class="opinion__title">Lucas Sousa</h3>
                     <p class="opinion__text">
-                        "Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit."
+                        "Gostei bastante do baralho. Levei para jogar na
+                        empresa, mas não posso falar como foi porque é
+                        informação <strong>confidencial</strong>."
                     </p>
                 </section>
                 <section class="opinion__container opinion__container-inverse">
@@ -221,8 +278,77 @@
                     <div></div>
                 </div>
             </article>
+
+            <!-- CALL TO ACTION SECTION -->
+
+            <article class="article__container reservation">
+                <section class="reservation__info">
+                    <h4 class="title">Você merece o melhor Baralho</h4>
+                    <img
+                        class="reservation__img"
+                        src="https://github.com/delfo2/baralho_azul/blob/main/img/7.webp?raw=true"
+                        alt="carta de baralho com zoom"
+                    />
+                    <p>
+                        O <strong>B</strong>aralho <strong>M</strong>atrix
+                        destaca-se pela sua fusão única de
+                        <em>design inovador e qualidade premium</em>, oferecendo
+                        uma <em>experiência</em> de jogo incomparável em relação
+                        aos outros baralhos tradicionais.
+                    </p>
+                </section>
+                <form action="/#" method="post" class="reservation__form">
+                    <h6 class="form__title">
+                        Reserve já o seu
+                        <strong>B</strong>aralho <strong>M</strong>atrix
+                    </h6>
+                    <fieldset class="form__fieldset form__name">
+                        <label for="nome">Nome completo:</label>
+                        <input required type="text" id="nome" minlength="10" />
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                        <label for="email">E-mail:</label>
+                        <input
+                            required
+                            type="email"
+                            id="email"
+                            minlength="10"
+                        />
+                    </fieldset>
+                    <button class="form__button" type="submit">
+                        Reserve Agora
+                    </button>
+                </form>
+                <div class="separator separator-black separator-white__heart">
+                    <div></div>
+                    <span>♠</span>
+                    <span class="separator__main">♥</span>
+                    <span>♠</span>
+                    <div></div>
+                </div>
+            </article>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <img src="assets/img/matrix.png" alt="logotipo matrix" />
+            <p>
+                Matrix é um site fictício de compra de baralho feito como objeto
+                de estudo.
+                <br />
+                Você pode checar as redes sociais do criador nos links a seguir:
+            </p>
+            <a
+                href="http://github.com/delfo2"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+            >
+            <a
+                href="https://www.linkedin.com/in/carlos-eduardo-araujo-morais-678974245/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+            >
+        </footer>
         <script type="module" src="assets/js/main.js"></script>
     </body>
 </html>

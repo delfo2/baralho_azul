@@ -1,16 +1,7 @@
 .opinion {
     background-color: var(--gold);
     color: var(--bkg);
-    padding-top: 10rem;
-}
-.opinion::after {
-    background-color: black;
-    content: "";
-    clip-path: polygon(0 0, 100% 0%, 0% 100%);
-    display: block;
-    position: absolute;
-    height: 10vh;
-    width: 100%;
+    transform: translateY(-5%);
 }
 
 .title-section {

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
 :root {
     --bkg: #1b1b1b;
+    --bkg-lighten: #707070;
     --bkg-transparent: #1b1b1b09;
     --main: #cf4647;
     --gold: #f5d061;
@@ -62,6 +63,11 @@
         color: var(--bkg);
     }
 }
+.separator-white__heart {
+    & > .separator__main {
+        color: var(--text);
+    }
+}
 
 .title {
     font-family: var(--font2);
@@ -73,4 +79,17 @@
         filter: brightness(1.2);
         font-weight: 900;
     }
+}
+
+em {
+    background-color: var(--gold);
+    display: inline-block;
+    line-height: 1rem;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+.article__container {
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    padding: 10rem 0;
 }

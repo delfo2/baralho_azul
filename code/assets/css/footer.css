@@ -1,0 +1,47 @@
+.footer {
+    align-items: center;
+    color: var(--text);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.footer > img {
+    margin-bottom: 1rem;
+    width: 20%;
+}
+.footer > p {
+    font-weight: 300;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.footer > a {
+    border: 1px solid var(--text);
+    background-color: var(--bkg);
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    padding: .5rem;
+    text-decoration: none;
+    &:hover {
+        border: 1px solid var(--bkg);
+        filter: invert();
+    }
+    &::after {
+        content: "";
+        background: url("../svg/github.svg");
+        filter: invert();
+        margin-left: 5px;
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+    }
+}
+
+.footer > a:last-child::after {
+    background: url("../svg/linkedin.svg");
+}

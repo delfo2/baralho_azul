@@ -2,6 +2,10 @@
     margin-top: 2rem;
 }
 
+em {
+    color: var(--bkg);
+}
+
 .paragraph {
     font-weight: 300;
     text-align: center;
@@ -45,14 +49,4 @@
 
 .design__title {
     font-size: 2rem;
-}
-
-.greeting::after {
-    content: "";
-    background-color: var(--bkg);
-    clip-path: polygon(0 0, 100% 0%, 0% 100%);
-    display: block;
-    position: absolute;
-    height: 10vh;
-    width: 100%;
 }
