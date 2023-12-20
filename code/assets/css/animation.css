@@ -37,6 +37,40 @@
     }
 }
 
+@keyframes slideInTop {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(500px);
+    }
+    100% {
+        opacity: 1;
+        pointer-events: initial;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes rotateDiagonally {
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 0, 0deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .slideInBottom {
     animation: slideInBottom 500ms ease-in-out 0s 1 alternate both;
 }
@@ -47,4 +81,22 @@
 
 .slideInRight {
     animation: slideInRight 500ms ease-in-out 0s 1 alternate both;
+}
+
+.slideInTop {
+    animation: slideInTop 500ms ease-in-out 0s 1 alternate both;
+}
+
+.fadeIn {
+    animation: fadeIn 1000ms ease-in-out 0s 1 alternate both;
+}
+
+.title-animation::after {
+    animation: rotateDiagonally 3s ease-in-out 0s infinite both;
+    content: "";
+    background: url("../img/a.webp");
+    background-size: contain;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
 }

@@ -1,11 +1,12 @@
 const menu = document.querySelector ("#menu" );
-let isOpen = menu.style.display === 'flex';
+let isOpen = false;
 
 export function changeMenuView() {
-    isOpen = menu.style.display !== 'none';
     if(!isOpen) {
         menu.style.display = 'flex';
+        isOpen = true;
         return;
     }
     menu.style.display = 'none';
+    isOpen = false;
 }
