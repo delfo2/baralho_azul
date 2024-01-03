@@ -1,4 +1,4 @@
-.header {
+#header {
     align-items: center;
     border-bottom: 2px solid var(--main);
     background-color: var(--main);
@@ -14,7 +14,7 @@
     top: 0;
 }
 
-.header__title {
+#header__title {
     height: 8vh;
     margin: 1rem;
     margin-right: 0;
@@ -27,7 +27,7 @@
     }
 }
 
-.header__btn {
+#menuBtn {
     background: url("../svg/menu.svg") no-repeat center;
     border: none;
     cursor: pointer;
@@ -39,7 +39,7 @@
     width: 3rem;
 }
 
-.header__menu {
+#menu {
     background-color: var(--main);
     display: none;
     flex-direction: column;
@@ -55,7 +55,7 @@
     }
 }
 
-.header__menu > a {
+#menu > a {
     animation: slideInBottom 500ms ease-in-out both;
     background-color: var(--main);
     color: var(--text);
@@ -70,7 +70,7 @@
         padding-right: 3px;
     }
 }
-.header__menu > a:hover {
+#menu > a:hover {
     background-color: var(--main);
     &::before {
         color: var(--text);
@@ -78,7 +78,7 @@
 }
 
 @media screen and (min-width:1024px) {
-    .header__menu {
+    #menu {
         border-bottom-left-radius: 10%;
         overflow: hidden;
         right: 0;

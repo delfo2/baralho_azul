@@ -25,12 +25,12 @@ html {
     margin: 0;
 }
 
-.body {
+#body {
     background-color: var(--bkg);
     width: 100%;
 }
 
-.main {
+#main {
     margin-top: 10rem;
     width: 100%;
 }
