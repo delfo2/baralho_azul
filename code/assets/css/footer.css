@@ -1,4 +1,4 @@
-.footer {
+#footer {
     align-items: center;
     color: var(--text);
     display: flex;
@@ -8,11 +8,11 @@
     margin-top: 5rem;
 }
 
-.footer > img {
+#footer > img {
     margin-bottom: 1rem;
     width: 20%;
 }
-.footer > p {
+#footer > p {
     font-weight: 300;
     padding: 0 2rem;
     margin-bottom: 1rem;
@@ -20,7 +20,7 @@
     width: 100%;
 }
 
-.footer > a {
+#footer > a {
     border: 1px solid var(--text);
     background-color: var(--bkg);
     display: flex;
@@ -43,16 +43,16 @@
     }
 }
 
-.footer > a:last-child::after {
+#footer > a:last-child::after {
     background: url("../svg/linkedin.svg");
 }
 
 
 @media screen and (min-width: 1024px) {
-    .footer {
+    #footer {
         margin-top: 5rem;
     }
-    .footer > img {
+    #footer > img {
         width: 10%;
     }
 }

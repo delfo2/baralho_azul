@@ -70,6 +70,14 @@
         opacity: 1;
     }
 }
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 .slideInBottom {
     animation: slideInBottom 500ms ease-in-out 0s 1 alternate both;
@@ -89,6 +97,10 @@
 
 .fadeIn {
     animation: fadeIn 1000ms ease-in-out 0s 1 alternate both;
+}
+
+.fadeOut {
+    animation: fadeOut 500ms ease-in-out 0s 1 alternate both;
 }
 
 .title-animation::after {

@@ -1,9 +1,9 @@
-.comparison {
+#comparison{
     background-color: var(--main);
     color: var(--text);
 }
 
-.comparison__introduction {
+#comparison__introduction {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +16,7 @@
     object-fit: contain;
 }
 
-.comparison__title {
+#comparison__title {
     font-size: 1.3rem;
     font-weight: 600;
     width: 100%;
@@ -37,7 +37,7 @@
     width: 70%;
 }
 
-.comparison__table {
+#comparison__table {
     border-radius: 20px;
     background-color: var(--gold);
     border-collapse: collapse;
@@ -53,47 +53,47 @@
     }
 }
 
-.comparison__table > thead {
+#comparison__table > thead {
     height: 7vh;
     margin-left: 1rem;
 }
-.comparison__table > thead > tr > th:nth-child(2) {
+#comparison__table > thead > tr > th:nth-child(2) {
     filter: brightness(1.2);
 }
 
-.comparison__table td {
+#comparison__table td {
     background-color: var(--gold);
     text-align: center;
     padding: 0.5rem;
     height: 100%;
 }
 
-.comparison__table td:first-child,
-.comparison__table td:last-child {
+#comparison__table td:first-child,
+#comparison__table td:last-child {
     filter: brightness(0.95);
 }
 
-.comparison__table tr:nth-child(even) > td:first-child,
-.comparison__table tr:nth-child(even) > td:last-child {
+#comparison__table tr:nth-child(even) > td:first-child,
+#comparison__table tr:nth-child(even) > td:last-child {
     filter: brightness(1);
 }
 
-.comparison__table tr > td:nth-child(2) {
+#comparison__table tr > td:nth-child(2) {
     filter: brightness(1.1);
 }
 
-.comparison__table tr:nth-child(even) > td:nth-child(2) {
+#comparison__table tr:nth-child(even) > td:nth-child(2) {
     filter: brightness(1.05);
 }
 
-.comparison__table .comparison__best {
+#comparison__table .comparison__best {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.comparison__table .comparison__best::after {
+#comparison__table .comparison__best::after {
     content: "";
     display: inline-block;
     background: url("../svg/accept.svg") no-repeat center;
@@ -103,7 +103,7 @@
     height: 25px;
 }
 
-.comparison__winner {
+#comparison__winner {
     align-items: center;
     display: flex;
     flex-flow: column wrap;
@@ -133,14 +133,14 @@
         width: 30%;
     }
 
-    .comparison__title {
+    #comparison__title {
         width: 40%;
     }
 
     .comparison__text {
         width: 30%;
     }
-    .comparison__winner {
+    #comparison__winner {
         height: 20vh;
         padding: 0 1rem;
         margin: 3rem 0;
@@ -148,24 +148,24 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .comparison {
+    #comparison{
         align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .comparison__introduction {
+    #comparison__introduction {
         width: 70%;
     }
-    .comparison__table {
+    #comparison__table {
         width: calc(90% - 4rem);
     }
 
-    .comparison__table td {
+    #comparison__table td {
         padding: 1rem 0.5rem;
     }
 
-    .comparison__winner {
+    #comparison__winner {
         width: 90%;
         & > .title {
             font-size: 2.5rem;

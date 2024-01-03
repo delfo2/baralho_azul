@@ -36,16 +36,8 @@ em {
     width: 100%;
 }
 
-.quality__title {
-    font-size: 2rem;
-}
-
-.design__img {
+#design__img {
     width: 80%;
-}
-
-.design__title {
-    font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -54,16 +46,17 @@ em {
         width: 50%;
     }
 
-    .design__img{
+    #design__img{
         width: 40%;
     }
 }
 
 @media screen and (min-width: 1024px) {
     #greeting {
+        align-items: flex-end;
         display: flex;
         flex-wrap: wrap;
-        align-items: flex-end;
+        padding-bottom: 10rem;
     }
     #greeting > section {
         width: 50%;
@@ -72,7 +65,7 @@ em {
         width: 100%;
     }
 
-    .design__img{
+    #design__img{
         width: 40%;
     }
 }

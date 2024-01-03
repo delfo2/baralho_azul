@@ -1,10 +1,8 @@
-.reservation {
+#reservation{
     background-color: var(--main);
-    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-    /* transform: translateY(-20%); */
 }
 
-.reservation__info {
+#reservation__info {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -12,17 +10,17 @@
     padding: 2rem;
 }
 
-.reservation__img {
+#reservation__img {
     width: 100%;
 }
 
-.reservation__info > .title {
+#reservation__info > .title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     width: 100%;
 }
 
-.reservation__info > p {
+#reservation__info > p {
     align-self: center;
     font-weight: 300;
     line-height: 1.3rem;
@@ -30,7 +28,7 @@
     width: 100%;
 }
 
-.reservation__form {
+#reservation__form {
     align-items: center;
     background-color: var(--gold);
     border-radius: 20px;
@@ -46,7 +44,7 @@
     }
 }
 
-.form__title {
+#form__title {
     font-size: 1.3rem;
     width: 100%;
     & > strong {
@@ -68,11 +66,11 @@
     }
 }
 
-.form__name {
+#form__name {
     margin-bottom: 1.5rem;
 }
 
-.form__button {
+#form__button {
     background-color: var(--bkg);
     border: none;
     border-radius: 10px;
@@ -88,15 +86,15 @@
 }
 
 @media screen and (min-width: 768px) {
-    .reservation__img {
+    #reservation__img {
         width: 50%;
     }
 
-    .reservation__info > p {
+    #reservation__info > p {
         width: 80%;
     }
 
-    .reservation__form {
+    #reservation__form {
         padding: 2rem;
         flex-flow: row wrap;
         align-items: flex-start;
@@ -104,7 +102,7 @@
         margin: 1rem 8rem;
     }
 
-    .form__title {
+    #form__title {
         font-size: 1.3rem;
         width: 100%;
     }
@@ -113,7 +111,7 @@
         width: 45%;
     }
 
-    .form__button {
+    #form__button {
         margin: 0 auto;
         width: 100%;
         &:hover {
@@ -124,31 +122,30 @@
 
 
 @media screen and (min-width: 1024px) {
-    .reservation {
+    #reservation{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 0;
     }
 
-    .reservation__info {
+    #reservation__info {
         padding: 1rem;
         width: 45%;
     }
 
-    .reservation__img {
+    #reservation__img {
         width: 50%;
     }
 
-    .reservation__info > p {
+    #reservation__info > p {
         width: 100%;
     }
 
-    .reservation__form {
+    #reservation__form {
         margin: 0;
         width: 50%;
     }
-    .reservation > .separator {
+    #reservation> .separator {
         margin-top: 5rem;
         width: 100%;
     }

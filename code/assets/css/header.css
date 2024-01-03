@@ -1,5 +1,14 @@
+@keyframes showMenu {
+    0% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 #header {
     align-items: center;
+    animation: showMenu 1000ms ease-in-out both alternate;
     border-bottom: 2px solid var(--main);
     background-color: var(--main);
     color: var(--text);

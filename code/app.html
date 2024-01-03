@@ -14,32 +14,44 @@
         <meta name="author" content="Carlos Eduardo Araujo Morais" />
 
         <!-- open graph -->
-        <meta property="og:title" content="Matrix"/>
-        <meta property="og:description" content="Compre os melhores baralhos do mercado."/>
-        <meta property="og:url" content="https://baralho-azul.vercel.app"/>
-        <meta property="og:image" content="https://github.com/delfo2/baralho_azul/blob/main/img/2.webp?raw=true"/>
-        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Matrix" />
+        <meta
+            property="og:description"
+            content="Compre os melhores baralhos do mercado."
+        />
+        <meta property="og:url" content="https://baralho-azul.vercel.app" />
+        <meta
+            property="og:image"
+            content="https://github.com/delfo2/baralho_azul/blob/main/img/2.webp?raw=true"
+        />
+        <meta property="og:type" content="website" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="../assets/css/style.css" />
-        <link rel="stylesheet" href="../assets/css/header.css" />
-        <link rel="stylesheet" href="../assets/css/animation.css" />
-        <link rel="stylesheet" href="../assets/css/greetings.css" />
-        <link rel="stylesheet" href="../assets/css/opinion.css" />
-        <link rel="stylesheet" href="../assets/css/comparison.css" />
-        <link rel="stylesheet" href="../assets/css/reservation.css" />
-        <link rel="stylesheet" href="../assets/css/footer.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/header.css" />
+        <link rel="stylesheet" href="./assets/css/animation.css" />
+        <link rel="stylesheet" href="./assets/css/greetings.css" />
+        <link rel="stylesheet" href="./assets/css/opinion.css" />
+        <link rel="stylesheet" href="./assets/css/comparison.css" />
+        <link rel="stylesheet" href="./assets/css/reservation.css" />
+        <link rel="stylesheet" href="./assets/css/footer.css" />
+        <link rel="stylesheet" href="./assets/css/loading.css">
         <link
             rel="shortcut icon"
-            href="../assets/img/a.webp"
+            href="./assets/img/a.webp"
             type="image/x-icon"
         />
         <title>Matrix</title>
     </head>
-    <body id="body" class="fadeIn">
-        <header id="header" class="slideInBottom">
+    <body id="body">
+        <div id="loading">
+            <div id="loading__circle">
+                <span id="loading__card"></span>
+            </div>
+        </div>
+        <header id="header">
             <h2 id="header__title">
-                <img src="../assets/img/matrix.png" alt="logotipo matrix" />
+                <img src="./assets/img/matrix.png" alt="logotipo matrix" />
             </h2>
             <button id="menuBtn"></button>
             <nav id="menu">
@@ -88,7 +100,7 @@
                         src="https://github.com/delfo2/baralho_azul/blob/main/img/3.webp?raw=true"
                         alt="carta de baralho com zoom"
                     />
-                    <h3 class="title quality__title title-animation">
+                    <h3 class="title title-animation">
                         <strong>Q</strong>ualidade <strong>S</strong>uperior
                     </h3>
                     <p class="paragraph">
@@ -96,13 +108,13 @@
                         design sofisticado.
                     </p>
                 </section>
-                <section class="greeting__container design">
+                <section class="greeting__container">
                     <img
-                        class="design__img"
+                        id="design__img"
                         src="https://github.com/delfo2/baralho_azul/blob/main/img/2.webp?raw=true"
                         alt="carta de baralho com zoom"
                     />
-                    <h3 class="title design__title title-animation">
+                    <h3 class="title title-animation">
                         <strong>D</strong>esign <strong>Ú</strong>nicos
                     </h3>
                     <p class="paragraph">
@@ -121,14 +133,14 @@
 
             <!-- COMPARISON SECTION -->
 
-            <article class="article__container comparison">
-                <section class="comparison__introduction">
+            <article id="comparison" class="article__container">
+                <section id="comparison__introduction">
                     <img
                         class="comparison__img"
                         src="https://github.com/delfo2/baralho_azul/blob/main/img/1.webp?raw=true"
                         alt="Baralho Matrix"
                     />
-                    <h3 class="title comparison__title">
+                    <h3 id="comparison__title" class="title">
                         <strong>B</strong>aralho <strong>M</strong>atrix
                         <br /><bold>VS</bold><br />
                         Outros Baralhos
@@ -148,7 +160,7 @@
                         Matrix e outros baralhos
                     </p>
                 </section>
-                <table class="comparison__table">
+                <table id="comparison__table">
                     <thead>
                         <tr>
                             <th>Funcionalidade</th>
@@ -208,7 +220,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <section class="comparison__winner">
+                <section id="comparison__winner">
                     <h4>Vencedor:</h4>
                     <h5 class="title">
                         <strong>B</strong>aralho <strong>M</strong>atriz
@@ -230,8 +242,8 @@
 
             <!-- OPINION SECTION-->
 
-            <article class="article__container opinion">
-                <h2 class="title title-section">
+            <article id="opinion" class="article__container">
+                <h2 id="title-section" class="title">
                     <strong>O</strong>pinião dos <strong>E</strong>specialistas
                 </h2>
                 <section class="opinion__container">
@@ -293,6 +305,24 @@
                         <strong>pedir para meus alunos cria-lo...</strong>"
                     </p>
                 </section>
+                <section class="opinion__container">
+                    <img
+                        class="opinion__img"
+                        src="https://media.licdn.com/dms/image/C4D03AQGO13yIkoCXVg/profile-displayphoto-shrink_800_800/0/1622670690655?e=1709769600&v=beta&t=TG4wJ7tnU4AVeoeGxa4vmy9_jP-ocRF2SBbgKaX_ups"
+                        alt="Foto do Professor Rodolfo Alves"
+                        srcset=""
+                    />
+                    <h3 class="opinion__title">Rodolfo Alves</h3>
+                    <p class="opinion__text">
+                        "Comprei pra poder jogar em um
+                        <strong
+                            >churrasco que um amigo prometeu a 3 anos atrás e
+                            nunca fez,</strong
+                        >
+                        mas mesmo com todo esse tempo as cartas continuam com a
+                        mesma qualidade!"
+                    </p>
+                </section>
                 <div class="separator separator-black">
                     <div></div>
                     <span>♠</span>
@@ -304,11 +334,11 @@
 
             <!-- CALL TO ACTION SECTION -->
 
-            <article class="article__container reservation">
-                <section class="reservation__info">
+            <article id="reservation" class="article__container">
+                <section id="reservation__info">
                     <h4 class="title">Você merece o melhor Baralho</h4>
                     <img
-                        class="reservation__img"
+                        id="reservation__img"
                         src="https://github.com/delfo2/baralho_azul/blob/main/img/7.webp?raw=true"
                         alt="carta de baralho com zoom"
                     />
@@ -320,12 +350,16 @@
                         aos outros baralhos tradicionais.
                     </p>
                 </section>
-                <form action="./success.html" method="get" class="reservation__form" id="goToForm">
-                    <h6 class="form__title">
+                <form
+                    action="./success.html"
+                    method="get"
+                    id="reservation__form"
+                >
+                    <h6 id="form__title">
                         Reserve já o seu
                         <strong>B</strong>aralho <strong>M</strong>atrix
                     </h6>
-                    <fieldset class="form__fieldset form__name">
+                    <fieldset id="form__name" class="form__fieldset">
                         <label for="nome">Nome completo:</label>
                         <input required type="text" id="nome" minlength="10" />
                     </fieldset>
@@ -338,7 +372,7 @@
                             minlength="10"
                         />
                     </fieldset>
-                    <button class="form__button" type="submit">
+                    <button id="form__button" type="submit">
                         Reserve Agora
                     </button>
                 </form>
@@ -351,8 +385,8 @@
                 </div>
             </article>
         </main>
-        <footer class="footer">
-            <img src="../assets/img/matrix.png" alt="logotipo matrix" />
+        <footer id="footer">
+            <img src="./assets/img/matrix.png" alt="logotipo matrix" />
             <p>
                 Matrix é um site fictício de compra de baralho feito como objeto
                 de estudo.
@@ -372,6 +406,6 @@
                 >LinkedIn</a
             >
         </footer>
-        <script type="module" src="../assets/js/main.js"></script>
+        <script type="module" src="./assets/js/main.js"></script>
     </body>
 </html>

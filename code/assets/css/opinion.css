@@ -1,10 +1,10 @@
-.opinion {
+#opinion{
     background-color: var(--gold);
     color: var(--bkg);
     /* transform: translateY(-5%); */
 }
 
-.title-section {
+#title-section {
     margin-bottom: 2rem;
     & > strong {
         filter: brightness(1.1) contrast(1.2);
@@ -35,8 +35,8 @@
     border-radius: 100%;
     grid-area: img;
     object-fit: cover;
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
 }
 
 .opinion__title {
@@ -74,7 +74,7 @@
     .opinion__container {
         width: 70%;
     }
-    .opinion {
+    #opinion{
         align-items: center;
         display: flex;
         flex-direction: column;
